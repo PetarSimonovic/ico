@@ -42,7 +42,7 @@ struct ScenekitView: UIViewRepresentable {
         scnView.allowsCameraControl = true
 
 
-        scnView.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.61)
+        scnView.backgroundColor = UIColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 0.61)
     }
     
     func generateIcosphere(recursions: Int = 0, wireframe: Bool = false) {
