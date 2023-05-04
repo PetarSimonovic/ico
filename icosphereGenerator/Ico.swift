@@ -20,7 +20,6 @@ class Ico {
     var index: Int32 = 3
     
     func generateIcoSphere(recursions: Int = 0) -> Icosphere {
-        print ("Generating!!")
         
         generateIcosahedron()
         if recursions > 0 {
