@@ -14,8 +14,7 @@ This process can be repeated to create a smoother sphere.
 func generateIcoSphere(recursions: Int = 0) 
 ```
 
-The core generator returns an Icosphere struct that contains the data for the vertices and indeces of the shape. These can be used to create stranger, irregular geometries.
-
+```generateIcoSphere``` func 
 
 
 
