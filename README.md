@@ -53,7 +53,7 @@ These views will run as an iOS app in XCode's content previews and simulators.
 
 
 
-### sources
+### Sources
 
 Fast Icosphere Mesh by Volodymyr Agafonkin
 https://observablehq.com/@mourner/fast-icosphere-mesh
