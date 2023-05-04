@@ -17,7 +17,6 @@ class Ico {
     
     var indices: [Int32] = []
     var vertices: [SCNVector3] = []
-    var index: Int32 = 3
     var indexDictionary: [Int32 : Int32] = [:]
     
     func generateIcoSphere(recursions: Int = 0) -> Icosphere {
@@ -25,9 +24,9 @@ class Ico {
         generateIcosahedron()
         if recursions > 0 {
             refineIcoSphere(recursions: recursions)
-            vertices = normaliseVertices()
         }
-        
+        vertices = normaliseVertices()
+
         return Icosphere(indices: indices, vertices: vertices)
         
     }
