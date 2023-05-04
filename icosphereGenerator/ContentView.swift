@@ -6,15 +6,27 @@
 //
 
 import SwiftUI
+import SceneKit
 
 struct ContentView: View {
+    
+    var scenekitView = ScenekitView()
+    
+    @State private var value = 0.0
+
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            scenekitView
         }
+        VStack {
+            Slider(value: $value, in: 0...10, onEditingChanged: { editing in
+                let recursions: Int = Int(value)
+                scenekitView.generateIcosphere(recursions: recursions)
+            })
+            Text("Recursion \(Int(value))")
+        }
+
         .padding()
     }
 }
