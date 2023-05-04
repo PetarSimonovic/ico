@@ -3,8 +3,7 @@
 An icosphere creator written in Swift, with a SwiftUI SceneKit view that demos the generated geometries.
 
 
-<img width="237" alt="image" src="https://user-images.githubusercontent.com/69108995/236297763-a6f0d2f1-b2a4-4bb3-a662-58336d5409db.png">
-<img width="223" alt="image" src="https://user-images.githubusercontent.com/69108995/236297615-b304b2e7-d776-4f71-a67a-d201394f83a0.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/69108995/236297763-a6f0d2f1-b2a4-4bb3-a662-58336d5409db.png">
 
 
 ## Usage
