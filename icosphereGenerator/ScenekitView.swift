@@ -21,15 +21,13 @@ struct ScenekitView: UIViewRepresentable {
     func makeUIView(context: Context) -> SCNView {
         
         generateIcosphere()
+        
         let cameraNode: SCNNode = SCNNode()
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3Make(0, 5, 0)
-
-        // Create Lights
         
         createAmbientLight()
         createOmniLight()
-        
         
         return scnView
 
@@ -38,24 +36,19 @@ struct ScenekitView: UIViewRepresentable {
 
     func updateUIView(_ scnView: SCNView, context: Context) {
         
-        // updates the scnView with the scene
         scnView.scene = scene
 
-        // allows the user to manipulate the camera
         
         scnView.allowsCameraControl = true
 
 
-        // configure the view
         scnView.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.61)
     }
     
     func generateIcosphere(recursions: Int = 0, wireframe: Bool = false) {
         
-        print("In scenekitscene")
         
         if let node = scene.rootNode.childNode(withName: "icosphere", recursively: false) {
-            print("removing node")
             node.removeFromParentNode()
         }
         let icosphereData: Icosphere = ico.generateIcoSphere(recursions: recursions)
@@ -108,7 +101,7 @@ struct ScenekitView: UIViewRepresentable {
         omniLightNode.light!.type = SCNLight.LightType.omni
         omniLightNode.light!.color = UIColor(white: 0.75, alpha: 1.0)
         omniLightNode.position = SCNVector3Make(0, 0, -3)
-       // scene.rootNode.addChildNode(omniLightNode)
+        scene.rootNode.addChildNode(omniLightNode)
     }
 
 }
