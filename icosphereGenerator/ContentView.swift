@@ -31,7 +31,7 @@ struct ContentView: View {
             })
             Text("Recursion \(Int(value))")
             Button(action: toggleWire) {
-                Text("Wire")
+                Text(wire ? "Solid" : "Wire")
             }
             
         }
