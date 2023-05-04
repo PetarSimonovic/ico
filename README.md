@@ -8,11 +8,14 @@ An icosphere creator written in Swift, with a SwiftUI SceneKit view that demos t
 
 ## Usage
 
-Ico generates the indices and vertices required to create an icosahedron or icosphere using SceneKit.
+Ico generates the indices and vertices required to create an icosahedron or icosphere.
 
-The accompanying views use that data to create the shapes. 
+It returns the indices as [Int32] and the vertices as [SCNVector3] so the values can be plugged straight into SceneKit's geometry generators.
 
-Ico's data could, however, be modified to create stranger geometries.
+Ico's data could, however, be translated into other formats or modified to create stranger geometries.
+
+The accompanying views use that data to create the shapes in a sample iOS app. 
+
 
 ### Icosphere generation
 
