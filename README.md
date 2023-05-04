@@ -45,14 +45,13 @@ struct Icosphere {
 ```
 ## Running the demos
 
-Ico was created as part of an iOS project and was designed so return data that could be modified before being used to create SceneKit geometries.
+Ico was created as part of an iOS project and was designed to return data that could be modified before being used to create SceneKit geometries.
 
 ScenekitView and ContentView render the data without any modification, other than allowing the level of recursion to be adjusted. 
 
-It also adds colours and toggles between solid/wireframe to make the faces more visible. 
+The views also add colours and allow toggling between solid/wireframe shapes to make the faces more visible. 
 
-These views will run as an iOS app in XCode's content previews and simulators.
-
+These views run as an iOS app in XCode's content previews and simulators.
 
 
 
