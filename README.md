@@ -60,3 +60,9 @@ https://observablehq.com/@mourner/fast-icosphere-mesh
 
 Creating an icosphere mesh in code by Andreas Kahler
 http://blog.andreaskahler.com/2009/06/creating-icosphere-mesh-in-code.html
+
+Gradient Meshes in SceneKit by MovingParts
+https://movingparts.io/gradient-meshes
+
+Custom Geometry in SceneKit by Mike Lucking
+https://betterprogramming.pub/custom-geometry-in-scenekit-under-swiftui-35a95520e6d9
