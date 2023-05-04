@@ -34,7 +34,7 @@ func generateIcoSphere(recursions: Int = 0)
 
 It has a default recursions value of 0, which will produce an unrefined icosahedron.
 
-It returns its data in an Icosphere struct, in types that conform to SceneKit's expectations for rendering geometry.
+It returns its data in an Icosphere struct, in types that are compatible with SceneKit.
 
 ```swift
 struct Icosphere {
