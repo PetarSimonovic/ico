@@ -1,6 +1,8 @@
 # ico
 
 An icosphere creator written in Swift, with a SwiftUI SceneKit view that demos the generated geometries.
+
+
 <img width="223" alt="image" src="https://user-images.githubusercontent.com/69108995/236297615-b304b2e7-d776-4f71-a67a-d201394f83a0.png">
 
 
