@@ -12,7 +12,7 @@ Ico generates the indices and vertices required to create an icosahedron or icos
 
 The accompanying views use that data to create the shapes. 
 
-Icos data could, however, be modified to create stranger geometries.
+Ico's data could, however, be modified to create stranger geometries.
 
 ### Icosphere generation
 
@@ -44,7 +44,9 @@ struct Icosphere {
 
 Ico was created as part of an iOS project and was designed so return data that could be modified before being used to create SceneKit geometries.
 
-ScenekitView and ContentView render the data without any modification, other than allowing the level of recursion to be adjusted and randomising the colours of the vertices to make the faces more visible. 
+ScenekitView and ContentView render the data without any modification, other than allowing the level of recursion to be adjusted. 
+
+It also adds colours and toggles between solid/wireframe to make the faces more visible. 
 
 These views will run as an iOS app in XCode's content previews and simulators.
 
