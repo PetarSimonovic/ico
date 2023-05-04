@@ -18,6 +18,7 @@ class Ico {
     var indices: [Int32] = []
     var vertices: [SCNVector3] = []
     var index: Int32 = 3
+    var indexDictionary: [Int32 : Int32] = [:]
     
     func generateIcoSphere(recursions: Int = 0) -> Icosphere {
         
@@ -98,8 +99,9 @@ class Ico {
         // Subdivide the icosahedron faces recursively to create an icosphere
         for _ in 1...recursions {
             var newIndices: [Int32] = []
+            indexDictionary = [:]
             
-            // Stride through the indices in batches of 3 to pick out individual the vertices that form each triangle
+            // Stride through the indices in batches of 3 to pick out individual vertices that form each triangle
             
             for i in stride(from: 0, to: indices.count, by: 3) {
                 let v1: Int32 = indices[i]
@@ -130,9 +132,14 @@ class Ico {
     }
     
         func createNewVertex(a: Int32, b: Int32) -> Int32 {
-        
-            //   let key: Int = getKey(a: a, b: b)
-            // first check if we have it already
+            
+            // check if this vertex has already been created
+            let key: Int32 = getKey(a: a, b: b)
+            
+            if let existingVertex = indexDictionary[key] {
+                // We already have this one so return it index
+                return existingVertex
+            }
             
             // use the indices to get existing vertices
             let vertex1: SCNVector3 = vertices[Int(a)];
@@ -146,9 +153,11 @@ class Ico {
             )
                     
             
-            // store it, return index
+            // Store the new vertex, update the dictionary and return the index
             vertices.append(vertex3)
-            return Int32(vertices.count - 1)
+            let index: Int32 = Int32(vertices.count - 1)
+            indexDictionary[key] = index
+            return index
         }
         
         func normaliseVertices() -> [SCNVector3] {
@@ -169,10 +178,15 @@ class Ico {
             return normalisedVertices
         }
         
-        func getKey(a: Int32, b: Int32) -> Int {
+        func getKey(a: Int32, b: Int32) -> Int32 {
             // Cantor's pairing function  takes two non-negative integers and returns a unique integer
+            // Use this to build a dictionary of key/indices pairs
             
-            return Int((a + b) * (a + b + 1) / 2 + b)
+            let min = min(a, b)
+            let max = max(a, b)
+            
+            let key = ((min + max) * (min + max + 1) / 2) + max
+            return key
         }
         
 }
