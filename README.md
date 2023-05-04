@@ -1,23 +1,42 @@
 # ico
 
-An icosphere creator written in Swift, with a SwiftUI SceneKit view that renders the generated geometries.
+An icosphere creator written in Swift, with a SwiftUI SceneKit view that demos the generated geometries.
 
 ## Usage
 
-The ico class generates creates an icosahedron, a  polyhedron with 20 equilateral triangles.
+Ico generates the indices and vertices required to create an icosahedron or icosphere using SceneKit.
+
+The accompanying views use that data to create the shapes. 
+
+Icos data could, howver, be modified to create stranger geometries.
+
+### Icosphere generation
+
+The Ico class creates an icosahedron, a  polyhedron with 20 equilateral triangles.
 
 It converts this into a sphere by splitting each triangle into four smaller triangles. 
 
-This process can be repeated to create a smoother sphere.
+This process can be repeated to create progressively smoother spheres.
+
 
 ```swift
 func generateIcoSphere(recursions: Int = 0) 
 ```
 
-```generateIcoSphere``` func 
+```generateIcoSphere``` calculates the indices and vectors that define the icosphere geometry. 
 
+It returns this data in an Icosphere struct, in types that coform to SceneKit's expectations for rendering geometry.
 
+```swift
+struct Icosphere {
+    let indices: [Int32]
+    let vertices: [SCNVector3]
+}
 
+```
+## Running the demos
+
+Ico was created as part of an iOS project and the ContentView preview
 
 ### sources
 
