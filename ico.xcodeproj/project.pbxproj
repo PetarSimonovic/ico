@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D99A9592A03F3A700595434 /* icosphereGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D99A9582A03F3A700595434 /* icosphereGeneratorApp.swift */; };
+		0D99A9592A03F3A700595434 /* icoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D99A9582A03F3A700595434 /* icoApp.swift */; };
 		0D99A95B2A03F3A800595434 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D99A95A2A03F3A800595434 /* ContentView.swift */; };
 		0D99A95D2A03F3A800595434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D99A95C2A03F3A800595434 /* Assets.xcassets */; };
 		0D99A9602A03F3A800595434 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D99A95F2A03F3A800595434 /* Preview Assets.xcassets */; };
@@ -36,14 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D99A9552A03F3A700595434 /* icosphereGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = icosphereGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D99A9582A03F3A700595434 /* icosphereGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icosphereGeneratorApp.swift; sourceTree = "<group>"; };
+		0D99A9552A03F3A700595434 /* ico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D99A9582A03F3A700595434 /* icoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icoApp.swift; sourceTree = "<group>"; };
 		0D99A95A2A03F3A800595434 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D99A95C2A03F3A800595434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D99A95F2A03F3A800595434 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0D99A9652A03F3A900595434 /* icosphereGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icosphereGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D99A9652A03F3A900595434 /* icoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D99A9692A03F3A900595434 /* icosphereGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icosphereGeneratorTests.swift; sourceTree = "<group>"; };
-		0D99A96F2A03F3A900595434 /* icosphereGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icosphereGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D99A96F2A03F3A900595434 /* icoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D99A9732A03F3A900595434 /* icosphereGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icosphereGeneratorUITests.swift; sourceTree = "<group>"; };
 		0D99A9752A03F3A900595434 /* icosphereGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icosphereGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0D99A9822A03F3C100595434 /* ScenekitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenekitView.swift; sourceTree = "<group>"; };
@@ -88,9 +88,9 @@
 		0D99A9562A03F3A700595434 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D99A9552A03F3A700595434 /* icosphereGenerator.app */,
-				0D99A9652A03F3A900595434 /* icosphereGeneratorTests.xctest */,
-				0D99A96F2A03F3A900595434 /* icosphereGeneratorUITests.xctest */,
+				0D99A9552A03F3A700595434 /* ico.app */,
+				0D99A9652A03F3A900595434 /* icoTests.xctest */,
+				0D99A96F2A03F3A900595434 /* icoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +98,7 @@
 		0D99A9572A03F3A700595434 /* icosphereGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				0D99A9582A03F3A700595434 /* icosphereGeneratorApp.swift */,
+				0D99A9582A03F3A700595434 /* icoApp.swift */,
 				0D99A95A2A03F3A800595434 /* ContentView.swift */,
 				0D99A95C2A03F3A800595434 /* Assets.xcassets */,
 				0D99A95E2A03F3A800595434 /* Preview Content */,
@@ -136,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0D99A9542A03F3A700595434 /* icosphereGenerator */ = {
+		0D99A9542A03F3A700595434 /* ico */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D99A9792A03F3A900595434 /* Build configuration list for PBXNativeTarget "icosphereGenerator" */;
+			buildConfigurationList = 0D99A9792A03F3A900595434 /* Build configuration list for PBXNativeTarget "ico" */;
 			buildPhases = (
 				0D99A9512A03F3A700595434 /* Sources */,
 				0D99A9522A03F3A700595434 /* Frameworks */,
@@ -148,14 +148,14 @@
 			);
 			dependencies = (
 			);
-			name = icosphereGenerator;
+			name = ico;
 			productName = icosphereGenerator;
-			productReference = 0D99A9552A03F3A700595434 /* icosphereGenerator.app */;
+			productReference = 0D99A9552A03F3A700595434 /* ico.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0D99A9642A03F3A900595434 /* icosphereGeneratorTests */ = {
+		0D99A9642A03F3A900595434 /* icoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D99A97C2A03F3A900595434 /* Build configuration list for PBXNativeTarget "icosphereGeneratorTests" */;
+			buildConfigurationList = 0D99A97C2A03F3A900595434 /* Build configuration list for PBXNativeTarget "icoTests" */;
 			buildPhases = (
 				0D99A9612A03F3A900595434 /* Sources */,
 				0D99A9622A03F3A900595434 /* Frameworks */,
@@ -166,14 +166,14 @@
 			dependencies = (
 				0D99A9672A03F3A900595434 /* PBXTargetDependency */,
 			);
-			name = icosphereGeneratorTests;
+			name = icoTests;
 			productName = icosphereGeneratorTests;
-			productReference = 0D99A9652A03F3A900595434 /* icosphereGeneratorTests.xctest */;
+			productReference = 0D99A9652A03F3A900595434 /* icoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0D99A96E2A03F3A900595434 /* icosphereGeneratorUITests */ = {
+		0D99A96E2A03F3A900595434 /* icoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D99A97F2A03F3A900595434 /* Build configuration list for PBXNativeTarget "icosphereGeneratorUITests" */;
+			buildConfigurationList = 0D99A97F2A03F3A900595434 /* Build configuration list for PBXNativeTarget "icoUITests" */;
 			buildPhases = (
 				0D99A96B2A03F3A900595434 /* Sources */,
 				0D99A96C2A03F3A900595434 /* Frameworks */,
@@ -184,9 +184,9 @@
 			dependencies = (
 				0D99A9712A03F3A900595434 /* PBXTargetDependency */,
 			);
-			name = icosphereGeneratorUITests;
+			name = icoUITests;
 			productName = icosphereGeneratorUITests;
-			productReference = 0D99A96F2A03F3A900595434 /* icosphereGeneratorUITests.xctest */;
+			productReference = 0D99A96F2A03F3A900595434 /* icoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0D99A9502A03F3A700595434 /* Build configuration list for PBXProject "icosphereGenerator" */;
+			buildConfigurationList = 0D99A9502A03F3A700595434 /* Build configuration list for PBXProject "ico" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,9 +225,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D99A9542A03F3A700595434 /* icosphereGenerator */,
-				0D99A9642A03F3A900595434 /* icosphereGeneratorTests */,
-				0D99A96E2A03F3A900595434 /* icosphereGeneratorUITests */,
+				0D99A9542A03F3A700595434 /* ico */,
+				0D99A9642A03F3A900595434 /* icoTests */,
+				0D99A96E2A03F3A900595434 /* icoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +266,7 @@
 				0D99A9852A03F44A00595434 /* IcosphereGenerator.swift in Sources */,
 				0D99A9832A03F3C100595434 /* ScenekitView.swift in Sources */,
 				0D99A95B2A03F3A800595434 /* ContentView.swift in Sources */,
-				0D99A9592A03F3A700595434 /* icosphereGeneratorApp.swift in Sources */,
+				0D99A9592A03F3A700595434 /* icoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,12 +292,12 @@
 /* Begin PBXTargetDependency section */
 		0D99A9672A03F3A900595434 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0D99A9542A03F3A700595434 /* icosphereGenerator */;
+			target = 0D99A9542A03F3A700595434 /* ico */;
 			targetProxy = 0D99A9662A03F3A900595434 /* PBXContainerItemProxy */;
 		};
 		0D99A9712A03F3A900595434 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0D99A9542A03F3A700595434 /* icosphereGenerator */;
+			target = 0D99A9542A03F3A700595434 /* ico */;
 			targetProxy = 0D99A9702A03F3A900595434 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -491,7 +491,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/icosphereGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/icosphereGenerator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ico.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ico";
 			};
 			name = Debug;
 		};
@@ -511,7 +511,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/icosphereGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/icosphereGenerator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ico.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ico";
 			};
 			name = Release;
 		};
@@ -554,7 +554,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D99A9502A03F3A700595434 /* Build configuration list for PBXProject "icosphereGenerator" */ = {
+		0D99A9502A03F3A700595434 /* Build configuration list for PBXProject "ico" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D99A9772A03F3A900595434 /* Debug */,
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D99A9792A03F3A900595434 /* Build configuration list for PBXNativeTarget "icosphereGenerator" */ = {
+		0D99A9792A03F3A900595434 /* Build configuration list for PBXNativeTarget "ico" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D99A97A2A03F3A900595434 /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D99A97C2A03F3A900595434 /* Build configuration list for PBXNativeTarget "icosphereGeneratorTests" */ = {
+		0D99A97C2A03F3A900595434 /* Build configuration list for PBXNativeTarget "icoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D99A97D2A03F3A900595434 /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D99A97F2A03F3A900595434 /* Build configuration list for PBXNativeTarget "icosphereGeneratorUITests" */ = {
+		0D99A97F2A03F3A900595434 /* Build configuration list for PBXNativeTarget "icoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D99A9802A03F3A900595434 /* Debug */,

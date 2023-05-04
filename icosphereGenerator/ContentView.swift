@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  icosphereGenerator
+//  ico
 //
 //  Created by Petar Simonovic on 04/05/2023.
 //
@@ -20,7 +20,7 @@ struct ContentView: View {
             scenekitView
         }
         VStack {
-            Slider(value: $value, in: 0...10, onEditingChanged: { editing in
+            Slider(value: $value, in: 0...5, onEditingChanged: { editing in
                 let recursions: Int = Int(value)
                 scenekitView.generateIcosphere(recursions: recursions)
             })

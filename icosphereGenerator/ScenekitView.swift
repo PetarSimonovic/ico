@@ -1,6 +1,6 @@
 //
 //  ScenekitView.swift
-//  icosphereGenerator
+//  ico
 //
 //  Created by Petar Simonovic on 04/05/2023.
 //
