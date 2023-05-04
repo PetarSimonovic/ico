@@ -8,7 +8,7 @@ Ico generates the indices and vertices required to create an icosahedron or icos
 
 The accompanying views use that data to create the shapes. 
 
-Icos data could, howver, be modified to create stranger geometries.
+Icos data could, however, be modified to create stranger geometries.
 
 ### Icosphere generation
 
@@ -25,7 +25,9 @@ func generateIcoSphere(recursions: Int = 0)
 
 ```generateIcoSphere``` calculates the indices and vectors that define the icosphere geometry. 
 
-It returns this data in an Icosphere struct, in types that coform to SceneKit's expectations for rendering geometry.
+It has a default recursions value of 0, which will produce an unrefined icosahedron.
+
+It returns its data in an Icosphere struct, in types that coform to SceneKit's expectations for rendering geometry.
 
 ```swift
 struct Icosphere {
@@ -36,7 +38,14 @@ struct Icosphere {
 ```
 ## Running the demos
 
-Ico was created as part of an iOS project and the ContentView preview
+Ico was created as part of an iOS project and was designed so return data that could be modified before being used to create SceneKit geometries.
+
+ScenekitView and ContentView render the data without any modification, other than allowing the level of recursion to be adjusted and randomising the colours of the vertices to make the faces more visible. 
+
+These views will run as an iOS app in XCode's content previews and simulators.
+
+
+
 
 ### sources
 
