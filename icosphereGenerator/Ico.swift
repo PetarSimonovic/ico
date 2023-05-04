@@ -13,7 +13,7 @@ struct Icosphere {
     let vertices: [SCNVector3]
 }
 
-class IcosphereGenerator {
+class Ico {
     
     var indices: [Int32] = []
     var vertices: [SCNVector3] = []

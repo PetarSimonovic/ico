@@ -15,7 +15,7 @@ struct ScenekitView: UIViewRepresentable {
     let scene = SCNScene()
     let scnView = SCNView()
 
-    let icosphereGenerator: IcosphereGenerator = IcosphereGenerator()
+    let ico: Ico = Ico()
 
     
     func makeUIView(context: Context) -> SCNView {
@@ -58,7 +58,7 @@ struct ScenekitView: UIViewRepresentable {
             print("removing node")
             node.removeFromParentNode()
         }
-        let icosphereData: Icosphere = icosphereGenerator.generateIcoSphere(recursions: recursions)
+        let icosphereData: Icosphere = ico.generateIcoSphere(recursions: recursions)
         let icosphere: SCNNode = createGeometry(icosphere: icosphereData)
         icosphere.name = "icosphere"
         scene.rootNode.addChildNode(icosphere)

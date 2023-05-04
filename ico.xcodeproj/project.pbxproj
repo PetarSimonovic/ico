@@ -15,7 +15,7 @@
 		0D99A9742A03F3A900595434 /* icosphereGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D99A9732A03F3A900595434 /* icosphereGeneratorUITests.swift */; };
 		0D99A9762A03F3A900595434 /* icosphereGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D99A9752A03F3A900595434 /* icosphereGeneratorUITestsLaunchTests.swift */; };
 		0D99A9832A03F3C100595434 /* ScenekitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D99A9822A03F3C100595434 /* ScenekitView.swift */; };
-		0D99A9852A03F44A00595434 /* IcosphereGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D99A9842A03F44A00595434 /* IcosphereGenerator.swift */; };
+		0D99A9852A03F44A00595434 /* Ico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D99A9842A03F44A00595434 /* Ico.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		0D99A9732A03F3A900595434 /* icosphereGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icosphereGeneratorUITests.swift; sourceTree = "<group>"; };
 		0D99A9752A03F3A900595434 /* icosphereGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icosphereGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0D99A9822A03F3C100595434 /* ScenekitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenekitView.swift; sourceTree = "<group>"; };
-		0D99A9842A03F44A00595434 /* IcosphereGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcosphereGenerator.swift; sourceTree = "<group>"; };
+		0D99A9842A03F44A00595434 /* Ico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ico.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 				0D99A95C2A03F3A800595434 /* Assets.xcassets */,
 				0D99A95E2A03F3A800595434 /* Preview Content */,
 				0D99A9822A03F3C100595434 /* ScenekitView.swift */,
-				0D99A9842A03F44A00595434 /* IcosphereGenerator.swift */,
+				0D99A9842A03F44A00595434 /* Ico.swift */,
 			);
 			path = icosphereGenerator;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D99A9852A03F44A00595434 /* IcosphereGenerator.swift in Sources */,
+				0D99A9852A03F44A00595434 /* Ico.swift in Sources */,
 				0D99A9832A03F3C100595434 /* ScenekitView.swift in Sources */,
 				0D99A95B2A03F3A800595434 /* ContentView.swift in Sources */,
 				0D99A9592A03F3A700595434 /* icoApp.swift in Sources */,
