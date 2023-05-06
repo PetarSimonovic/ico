@@ -6,7 +6,7 @@ An icosphere creator written in Swift, with a SwiftUI SceneKit view that demos t
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/69108995/236297763-a6f0d2f1-b2a4-4bb3-a662-58336d5409db.png">
 
 
-## Usage
+## How to use
 
 Ico generates the indices and vertices required to create an icosahedron or icosphere.
 
