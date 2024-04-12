@@ -14,7 +14,7 @@ It returns the indices as [Int32] and the vertices as [SCNVector3] so the values
 
 Ico's data could, however, be translated into other formats or modified to create stranger geometries.
 
-The accompanying views use that data to create the shapes in a sample iOS app. 
+The accompanying views use that data to render the shapes in a sample iOS app. 
 
 
 ### Icosphere generation
